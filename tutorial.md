@@ -1,4 +1,5 @@
 ### The tutorial for clc
 
-For the most part just follow the cli's instructions,
-but for the power of you need to use an underscore
+For the most part just follow the cli's instructions, 
+<br>
+but for the power of you need to use an underscore (on select, not entering numbers)
