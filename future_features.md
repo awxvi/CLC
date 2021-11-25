@@ -4,7 +4,7 @@
 <br>
 
 ## 1 - More operations 
-    { Square root, Cubed root, Percentage }
+    { Cubed root, Percentage }
 ## 2 - Triganomitory
     { Cos, Sin, Tan }
 ## 3 - User made variables

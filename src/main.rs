@@ -56,6 +56,17 @@ fn power_of(){
     println!("Your result is:  {}", first_num_pwrof.pow(second_num_pwrof));
 }
 
+fn sqrt(){
+    /* DEBUG PURPOUSES */
+    // println!("You picked: power_of");
+    /* END OF BUFFER */
+
+    println!("Please say what number you want to square root: ");
+    let first_num_sqrt: f64 = read!();
+
+    println!("Your result is:  {}", first_num_sqrt.sqrt());
+}
+
 fn main() {
     println!("Hello and welcome to CLC (command line calculator).");
     println!("What operation would you like to do?");
@@ -70,8 +81,10 @@ fn main() {
         addition();
     } else if operation == "subtraction" || operation == "subtract" || operation == "Subtraction" || operation == "Subtract" {
         subtraction();
-    }else if operation == "power_of" || operation == "Power_of" || operation == "Power_Of"{
+    } else if operation == "power_of" || operation == "Power_of" || operation == "Power_Of"{
         power_of();
+    } else if operation == "sqrt" || operation == "Sqrt"  || operation == "square_root" || operation == "Square_Root"{
+        sqrt();
     } else {
         println!("OOF, failed somewhere.");
     }
