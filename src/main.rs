@@ -58,7 +58,7 @@ fn power_of(){
 
 fn sqrt(){
     /* DEBUG PURPOUSES */
-    // println!("You picked: power_of");
+    // println!("You picked: sqrt");
     /* END OF BUFFER */
 
     println!("Please say what number you want to square root: ");
