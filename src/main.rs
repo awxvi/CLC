@@ -45,6 +45,17 @@ fn subtraction() {
     println!("Your result is:  {}", first_num_sub - second_num_sub);
 }
 
+fn power_of(){
+    /* DEBUG PURPOUSES */
+    // println!("You picked: power_of");
+    /* END OF BUFFER */
+
+    println!("Please say a whole number and to the power of what: ");
+    let first_num_pwrof: i64 = read!();
+    let second_num_pwrof: u32 = read!();
+    println!("Your result is:  {}", first_num_pwrof.pow(second_num_pwrof));
+}
+
 fn main() {
     println!("Hello and welcome to CLC (command line calculator).");
     println!("What operation would you like to do?");
@@ -59,6 +70,8 @@ fn main() {
         addition();
     } else if operation == "subtraction" || operation == "subtract" || operation == "Subtraction" || operation == "Subtract" {
         subtraction();
+    }else if operation == "power_of" || operation == "Power_of" || operation == "Power_Of"{
+        power_of();
     } else {
         println!("OOF, failed somewhere.");
     }
