@@ -1,6 +1,9 @@
 #[macro_use]
 extern crate text_io;
 
+use std::fs::File;
+use std::io::prelude::*;
+
 fn divide() {
     /* DEBUG PURPOUSES */
     // println!("You picked: divide");
@@ -73,19 +76,29 @@ fn main() {
 
     let operation: String = read!();
 
-    if operation == "divide" || operation == "Divide" {
-        divide();
-    } else if operation == "multiplication" || operation == "multiply" || operation == "Multiplication" || operation == "Multiply" {
-        multiplication();
-    } else if operation == "addition" || operation == "add" || operation == "Addition" || operation == "Add" {
-        addition();
-    } else if operation == "subtraction" || operation == "subtract" || operation == "Subtraction" || operation == "Subtract" {
-        subtraction();
-    } else if operation == "power_of" || operation == "Power_of" || operation == "Power_Of"{
-        power_of();
-    } else if operation == "sqrt" || operation == "Sqrt"  || operation == "square_root" || operation == "Square_Root"{
-        sqrt();
-    } else {
-        println!("OOF, failed somewhere.");
+    match operation.as_str(){
+        "divide" => divide(),
+        "Divide" => divide(),
+        "/" => divide(),
+        "multiplication" => multiplication(),
+        "Multiplication" => multiplication(),
+        "*" => multiplication(),
+        "addition" => addition(),
+        "Addition" => addition(),
+        "+" => addition(),
+        "subtraction" => subtraction(),
+        "Subtraction" => subtraction(),
+        "-" => subtraction(),
+        "power of" => power_of(),
+        "Power Of" => power_of(),
+        "Power of" => power_of(),
+        "power Of" => power_of(),
+        "^" => power_of(),
+        "square root" => sqrt(),
+        "Square Root" => sqrt(),
+        "Square root" => sqrt(),
+        "square Root" => sqrt(),
+        "!" => sqrt(),
+        _ => println!("Error, Failed somewhere!")
     }
 }
